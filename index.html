@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <title>HTML</title>
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+   <link rel="stylesheet" href="style.css">
+   <script type="module" src="controller.js"></script>
+   <script type="module" src="model.js"></script>
+   <script type="module" src="View.js"></script>
+   <script type="module" src="dateView.js"></script>
+   <script type="module" src="currentDateView.js"></script>
+   <script type="module" src="addTaskButton.js"></script>
+   <script type="module" src="allTaskView.js"></script>
+   <script type="module" src="optionView.js"></script>
+</head>
+
+<body>
+   <div class="app">
+      <div class="header">
+         <span class="logo1"> <span class="material-symbols-outlined">
+               person
+            </span></span>
+         <h3 class="title">Task Manager</h3>
+         <span class="logo2"> <span class="material-symbols-outlined">
+               menu
+            </span></span>
+      </div>
+      <div class="currentDateWrapper"></div>
+      <div class="dateWrapper"></div>
+
+      <div class="taskConatiner">
+
+      </div>
+      <div class="addTaskBtn">
+         <span class="material-symbols-outlined">
+            add
+         </span>
+      </div>
+      <div class="addTaskPage hidden">
+         <form>
+            <label for="nameTask">I Want To do</label>
+            <input type="text" class="nameTask" name="nameTask" placeholder="Add Your Task">
+            <Label class="When" for="addDate">On</Label>
+            <input type="date" name="addDate" class="addDate" value="2023-07-07">
+            <label for="addTime">At</label>
+            <input type="time" value="08:50" name="addTime" class="addTime">
+            <input type="submit" value="Add" class="submit">
+         </form>
+      </div>
+      
+      <div class="editPage hidden">
+           <form>
+            <label for="nameTask">I Want To do</label>
+            <input type="text" class="editName" name="nameTask" placeholder="Add Your Task">
+            <label for="addTime">At</label>
+            <input type="time" value="08:50" name="addTime" class="addTime2">
+            <input type="submit" value="done" class="done">
+         </form>
+      </div>
+      <div class="overlay hidden"></div>
+   </div>
+</body>
+
+</html>

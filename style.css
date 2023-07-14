@@ -1,0 +1,176 @@
+/*color:#42445A,#BA73D9,#1AD9D9,#D2D9D8,#4E4848;
+
+*/
+* {
+    font-size: 15pt;
+    margin: 0;
+    padding: 0;
+    color: white ;
+}
+.app{
+   width: 100vw;
+   height: 100vh;
+   background: #333230;
+   position: fixed;
+}
+.header{
+   display: flex;
+   justify-content: space-between;
+   align-items: center; 
+   width: 90%;
+   height: 40px;
+   margin: 0 5%;
+}
+.title2{
+   width: 50%;
+   font-size: 3rem;
+   font-weight: 800;
+   letter-spacing: 3px;
+   margin:20px 10px;
+}
+.dateNow{
+   margin-left: 10px;
+   font-weight: 200;
+}
+.dataContainer{
+   width: 100%;
+   height: 80px;
+   display:flex;
+   justify-content: space-around;
+   align-items: center; 
+   
+}
+.dataContainer span{
+   width: 14.3%;
+   text-align: center;
+   
+}
+.day{
+   font-weight: 800;
+   opacity: 0.5
+}
+.date{
+   font-weight: 300;
+   opacity: 0.5
+}
+.taskConatiner{
+   overflow: scroll;
+   width: 90%;
+   height: 55%;
+   margin-top: 20px;
+   margin: 0 auto;
+}
+.taskItem{
+   width: 98%;
+   height: 40px;
+   display: grid;
+   grid-template-columns: 1fr 4fr 2fr; 
+   align-items: center;
+   background: #464543;
+   grid-gap: 10px;
+   margin-top: 5px
+}
+.time {
+   font-size: 14px;
+   text-align: center 
+}
+
+.taskName{
+   font-size: 14px;
+   font-weight: 300
+}
+
+.check{
+   font-size: 30px;
+   line-height: 40px
+}
+
+.hidden{
+   display: none ;
+}
+.addTaskBtn{
+   position: absolute;
+   bottom: 50px;
+   right: 25px;
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   background: #1AD9D9;
+   text-align: center; 
+   line-height: 75px;
+}
+.addTaskBtn span{
+   font-size: 40px
+}
+.addTaskPage{
+   width: 200px;
+   height: 200px;
+   position: absolute;
+   top: 40%;
+   left: 25%;
+   background: #5D5D5E;
+   text-align: center;
+   padding:10px 5px;
+   z-index: 10
+}
+.addTaskPage input{
+   width: 90%;
+   height : 10%;
+   border-radius: 3px;
+   text-align: center;
+   color: black;
+   margin-top: 5px;
+}
+
+.addTaskPage input[type="submit"]{
+   width: 50%;
+   height: 15%;
+   background:  #1AD9D9;
+   
+}
+.overlay {
+   position: absolute;
+   top: 0;
+   height: 100vh;
+   width: 100vw;
+   color: white;
+   backdrop-filter: blur(2px)
+}
+.glow{
+   text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff;
+    opacity: 1
+}
+
+
+.editPage{
+   width: 200px;
+   height: 150px;
+   position: absolute;
+   top: 40%;
+   left: 25%;
+   background: #5D5D5E;
+   text-align: center;
+   padding:10px 5px;
+   z-index: 10
+}
+.editPage input{
+   width: 90%;
+   height : 10%;
+   border-radius: 3px;
+   text-align: center;
+   color: black;
+   margin-top: 5px;
+}
+
+.editPage input[type="submit"]{
+   width: 50%;
+   height: 15%;
+   background:  #1AD9D9;
+}
+
+.checks{
+   border:1px solid #30F91AA3;
+}
